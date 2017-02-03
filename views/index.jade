@@ -1,0 +1,27 @@
+doctype html
+html(lang='en')
+	head
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(href='css/bootstrap.min.css', rel='stylesheet')
+		link(href='css/bootstrap-social.css', rel='stylesheet')
+		link(href='css/font-awesome.css', rel='stylesheet')
+		link(href='css/freelancer.min.css', rel='stylesheet')
+		link(href='css/shared.css', rel='stylesheet')
+		link(href='css/index.css', rel='stylesheet')
+
+	body
+		.banner
+			include shared/banner
+			
+		.content			
+			h2 Welcome
+
+			h4 Please login to your Yahoo account
+
+			.loginBtn.pull-left
+				a.login.btn.btn-block.btn-social-icon.btn-yahoo(href='/auth/yahoo') 
+					span.fa.fa-yahoo#yahooOverride
+					.adjust Sign In With Yahoo!
+
+
+		include shared/scripts

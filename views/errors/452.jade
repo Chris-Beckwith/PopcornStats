@@ -1,0 +1,22 @@
+doctype html
+html(lang='en')
+	head
+	body
+						h2.cover-heading= errorMsg
+						
+						if (err.length > 0)
+							.errorBox
+								p= err
+								p= err2
+								
+					.login-re-captcha-link.errorBox
+						p.success
+							| You may also use 
+							a.text-danger(href='/loginReCaptcha') ReCaptcha Login
+							|  to by-pass the lockout.
+							
+					.catPic
+						img(src='img/err/adminCat.jpg' alt='ERROR')
+						
+		include ../shared/foot
+		include ../shared/scripts

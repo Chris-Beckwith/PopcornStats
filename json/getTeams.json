@@ -1,0 +1,6 @@
+{
+	"error": {
+		"lang": "en-US",
+		"description": "Please provide valid credentials. OAuth oauth_problem=\"token_expired\", realm=\"yahooapis.com\""
+	}
+}

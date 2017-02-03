@@ -1,0 +1,104 @@
+{
+	"fantasy_content": {
+		"xml:lang": "en-US",
+		"yahoo:uri": "/fantasy/v2/users;use_login=1/games;game_keys=nba/leagues",
+		"users": {
+			"0": {
+				"user": [
+					{
+						"guid": "OCCAUNLH7CRDBXNE2WVDMWWTVI"
+					},
+					{
+						"games": {
+							"0": {
+								"game": [
+									{
+										"game_key": "364",
+										"game_id": "364",
+										"name": "Basketball",
+										"code": "nba",
+										"type": "full",
+										"url": "https://basketball.fantasysports.yahoo.com/nba",
+										"season": "2016",
+										"is_registration_over": 0
+									},
+									{
+										"leagues": {
+											"0": {
+												"league": [
+													{
+														"league_key": "364.l.12752",
+														"league_id": "12752",
+														"name": "Pass the Dwayne Johnson III",
+														"url": "https://basketball.fantasysports.yahoo.com/nba/12752",
+														"draft_status": "postdraft",
+														"num_teams": 10,
+														"edit_key": "2017-01-11",
+														"weekly_deadline": "",
+														"league_update_timestamp": "1484031895",
+														"scoring_type": "head",
+														"league_type": "private",
+														"renew": "353_19554",
+														"renewed": "",
+														"short_invitation_url": "https://yho.com/nba?l=12752&ikey=1c34d22884d16983",
+														"allow_add_to_dl_extra_pos": 0,
+														"is_pro_league": "0",
+														"is_cash_league": "0",
+														"current_week": 12,
+														"start_week": "1",
+														"start_date": "2016-10-25",
+														"end_week": "22",
+														"end_date": "2017-04-02",
+														"game_code": "nba",
+														"season": "2016"
+													}
+												]
+											},
+											"1": {
+												"league": [
+													{
+														"league_key": "364.l.179148",
+														"league_id": "179148",
+														"name": "TestLeague",
+														"url": "https://basketball.fantasysports.yahoo.com/nba/179148",
+														"password": "",
+														"draft_status": "predraft",
+														"num_teams": 1,
+														"edit_key": "2017-01-11",
+														"weekly_deadline": "",
+														"league_update_timestamp": null,
+														"scoring_type": "head",
+														"league_type": "private",
+														"renew": "",
+														"renewed": "",
+														"short_invitation_url": "https://yho.com/nba?l=179148&ikey=7d645552f37dc78b",
+														"allow_add_to_dl_extra_pos": 0,
+														"is_pro_league": "0",
+														"is_cash_league": "0",
+														"current_week": 12,
+														"start_week": "10",
+														"start_date": "2016-12-26",
+														"end_week": "22",
+														"end_date": "2017-04-02",
+														"game_code": "nba",
+														"season": "2016"
+													}
+												]
+											},
+											"count": 2
+										}
+									}
+								]
+							},
+							"count": 1
+						}
+					}
+				]
+			},
+			"count": 1
+		},
+		"time": "100.87418556213ms",
+		"copyright": "Data provided by Yahoo! and STATS, LLC",
+		"refresh_rate": "60"
+	}
+}

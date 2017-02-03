@@ -1,0 +1,139 @@
+/*
+@font-face {
+	font-family: bootstrapFont;
+	src: url('/fonts/glyphicons-halflings-regular.woff');
+}
+*/
+
+.welcome {
+	margin: 0;
+	padding-top: 10px;
+    margin-bottom: -10px;
+}
+.x {
+	margin-left: 10px;
+}
+
+.curWeek {
+	font-size: 12pt;
+}
+
+.matchups {
+	margin: 20px;
+	padding: 2px;
+}
+
+.matchups {
+}
+
+.team {
+	margin-right: 50px;
+	float: left;
+}
+
+.teamName {
+	font-size: 16pt;
+}
+
+.leagueName {
+	font-size: 14pt;
+}
+
+.showWeekly {
+	
+}
+
+.botMargin {
+	margin-bottom: 10px;
+}
+
+.matchupCurrentWeek {
+	font-weight: bold;
+}
+
+.showPreviousCompare {
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+.weeklyCompareGroup {
+	margin-left: 20px;
+}
+
+.matchup, .matchupCurrentWeek {
+	margin: 10px 0;
+}
+
+.matchupCurrentCompare, .matchupSchedule, .matchupPrevious {
+	margin: 10px 0;
+	min-width: 300px;
+}
+
+.matchupSchedule {
+	min-width: inherit;
+}
+
+.noTeams {
+	font-size: 12pt;
+	font-weight: bold;
+	color: firebrick;
+	padding: 2px;
+}
+
+.teams {
+	padding: 2px;
+	background: transparent !important;
+}
+
+.content {
+	min-height: 100%;
+	height: auto !important;
+    height: 100%;
+	margin: -80px auto -62px;
+	padding-top: 80px;
+	background: transparent;
+}
+
+.content div {
+	background-color:rgba(255, 242, 196,0.5);
+}
+
+.donateButton, .push {
+	float: left;
+	height: 58px;
+	width: 100%;
+    background-color: transparent !important;
+}
+
+.pad {
+	padding:2px 8px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.button {
+/*	font-family: bootstrapFont;*/
+	font-weight: bold;
+	background-color: #fffbea;
+}
+
+.warning {
+	font-weight: bold;
+	color: crimson;
+	margin-top: 10px;
+	padding: 0 10px;
+}
+
+a, a.active, a:active, a:focus, a:hover {
+	color: #337ab7;
+}
+html, body {
+	height: 100%;
+	padding: 2px;
+	margin: 0;
+}
+
+body {
+	background-image: url('/img/youngRock.png');
+}

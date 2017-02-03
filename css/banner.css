@@ -1,0 +1,64 @@
+.banner {
+	display: block;
+	background-color:rgba(255, 242, 196,0.5);
+}
+
+#navbar-dropdown {
+	background-color:rgba(255, 242, 196,0.5);
+	min-width: auto;
+}
+
+#dropdown, #bannerDiv, #bs-example-navbar-collapse-1 {
+	background-color: transparent;
+}
+
+#dropdownMenu {
+	background-color:rgba(222, 184, 135, 0.5);
+}
+
+.padRight {
+	margin-right: -10px;
+	margin-top: 4px;
+}
+
+#brand {
+	color: black;
+}
+
+@media (min-width: 768px) {
+	#navbar-dropdown {
+		display: none;
+	}
+}
+
+.login, .logout {
+	width: auto;
+}
+
+.logout {
+	opacity: 0.8;
+}
+.dropdown-logout {
+	width: 81px;
+    margin: 0 20px;
+}
+
+#yahooOverride {
+	position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 32px !important;
+    line-height: 34px;
+    font-size: 1.6em;
+    text-align: center;
+    border-right: 1px solid rgba(0,0,0,0.8);
+	margin: 0;
+}
+
+.adjust {
+	margin: 0;
+	padding-left: 40px;
+    padding-right: 10px;
+    line-height: 32px;
+}

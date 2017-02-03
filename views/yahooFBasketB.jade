@@ -1,0 +1,124 @@
+doctype html
+html(lang='en')
+	head
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(href='css/bootstrap.min.css', rel='stylesheet')
+		link(href='css/bootstrap-social.css', rel='stylesheet')
+		link(href='css/font-awesome.css', rel='stylesheet')
+		link(href='css/freelancer.min.css', rel='stylesheet')
+		link(href='css/shared.css', rel='stylesheet')
+		link(href='css/yahooFBasketB.css', rel='stylesheet')
+		- var matchupUrl = "https://basketball.fantasysports.yahoo.com/nba/12752/matchup?week=";
+		- var mid1 = "&mid1="
+		- var mid2 = "&mid2="
+	
+	body
+		.banner
+			include shared/banner
+		.content
+			.teams
+				h3.teamHeader Your Team(s)
+				- var t = 0;
+				- console.log("TEAM LENGTH: " + user.teams.length);
+				- if (user.teams.length > 0) {
+					each team in user.teams
+						- t++;
+						.team(id='team#{t}')
+							.teamName.pad #{team.name}
+								input.x.button.btn.btn-default(type='submit' value='X' onclick='hideMe(#{t})')
+							.teamlogo
+								img(src="#{team.logo}")
+							.teamRoster
+								a.bold.roster(href="#{team.roster}" alt='Team Roster' target='_blank') Team Roster
+
+							each league in user.leagues
+								.leagueInfo
+									- if (team.key.includes(league.key)) {
+										.leagueName.pad #{league.name}
+										- if (team.isReady) {
+											.curWeek CurrentWeek <strong>#{league.currentWeek}</strong>
+										- }
+
+										.season Season <strong>#{league.season}</strong>
+
+										- if (team.isReady) {
+											//- .numTeams NumTeams #{league.numTeams}
+											.stWeek StartWeek <strong>#{league.startWeek}</strong>
+											.endWeek EndWeek <strong>#{league.endWeek}</strong>
+										- }
+									- }
+
+							.leagues
+								each league in user.leagues
+									- if (team.key.includes(league.key) && team.isReady) {
+										.showLeague
+											input.button.btn.btn-default(type='submit' alt='Show League' value='Show League' id='showLeague' onclick='showLeague("#{team.key}")')
+
+										.league(id=team.key style='display:none; padding: 2px;')
+											a.bold.leagueUrl(href="#{league.url}" alt='League Page' target="_blank") League Page
+											//- .leagueName LeagueName #{league.name}
+											//- .numTeams NumTeams #{league.numTeams}
+											//- .curWeek CurrentWeek #{league.currentWeek}
+											//- .stWeek StartWeek #{league.startWeek}
+											//- .endWeek EndWeek #{league.endWeek}
+											//- .season Season #{league.season}
+											- var index = 0
+
+											.matchups
+												.showWeekly.botMargin
+													input.button.btn.btn-default(type='submit' alt='Show Current Compares' value='Show Current Week Compares' onclick='showCurrent()')
+												.matchupCurrentCompare#matchupCurrentCompare(style='display:none;')
+													- for (var i = 1; i <= league.numTeams; i++) {
+														- if (team.id != i) {
+															.matchup
+																a.matchupUrl(href= "#{matchupUrl}" + "#{league.currentWeek}" + "#{mid1}" + "#{team.id}" + "#{mid2}" + "#{i}" alt='matchup' target="_blank") Compare vs. #{league.teamNames[i]}
+														- }
+													- }
+
+												.showWeekly.botMargin
+													input.button.btn.btn-default(type='submit' alt='Show Weekly' value='Show Weekly Matchups' onclick='showWeekly()')
+												.matchupSchedule#matchupSchedule(style='display:none;')
+													each matchup in league.matchups
+														- if (++index == league.currentWeek) {
+															.matchupCurrentWeek
+																a.matchupUrl(href= "#{matchupUrl}" + "#{index}" + "#{mid1}" + "#{team.id}" + "#{mid2}" + "#{matchup.teamId}" alt='matchup' target="_blank") Current Week #{index} Matchup
+														- } else {
+															.matchup
+																a.matchupUrl(href= "#{matchupUrl}" + "#{index}" + "#{mid1}" + "#{team.id}" + "#{mid2}" + "#{matchup.teamId}" alt='matchup' target="_blank") Week #{index} Matchup
+														- }
+
+												.showWeekly
+													input.button.btn.btn-default(type='submit' alt='Previous Weeks Compare' value='Show Previous Weeks Compare' onclick='showPrevious()')
+												.matchupPrevious#matchupPrevious(style='display:none;')
+													- for (var i = 1; i < league.currentWeek; i++) {
+														.showPreviousCompare
+															- if (league.results[i - 1]) {
+																input.button.btn.btn-default(type='submit' alt='Show Previous Week' value='Week #{i} (WIN)' onclick='showPreviousCompare("#{team.key}", "#{i}")')
+															- } else {
+																input.button.btn.btn-default(type='submit' alt='Show Previous Week' value='Week #{i} (LOSS)' onclick='showPreviousCompare("#{team.key}", "#{i}")')
+															- }
+														.weeklyCompareGroup(id="#{i}_#{team.key}" style='display:none;')
+															- for (var n = 1; n <= league.numTeams; n++) {
+																- if (n != team.id) {
+																	.matchup
+																		a.matchupUrl(href= "#{matchupUrl}" + "#{i}" + "#{mid1}" + "#{team.id}" + "#{mid2}" + "#{n}" alt='matchup' target="_blank") Compare vs. #{league.teamNames[n]}
+																- }
+															- }
+													- }
+									- } else if (team.key.includes(league.key) && !team.isReady) {
+										.showLeague
+											input.button.btn.btn-default(type='submit' alt='Show League' value='Show League' id='showLeague' onclick='showLeague("#{team.key}")')
+
+										.league(id=team.key style='display:none;')
+											a.bold.leagueUrl(href="#{league.url}" alt='League Page' target="_blank") League Page
+
+											.leagueNotReady.warning This league has not been fully set up.
+									- }
+				- } else {
+					.noTeams There are no Yahoo fantasy basketball teams associated with this account.
+				- }
+				.push
+		.donateButton
+			include donate
+
+		include shared/scripts

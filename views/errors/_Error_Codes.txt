@@ -1,0 +1,9 @@
+404 - Not Found (User or whatever was being searched for)
+
+(452 - User account receiving high volume of invalid credentials)
+(453 - Login System receiving high volume of invalid credentials)
+
+500 - Generic Server Error
+
+520 - Password change error
+521 - Display Name change error

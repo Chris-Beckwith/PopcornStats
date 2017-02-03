@@ -1,0 +1,13 @@
+doctype html
+html(lang='en')
+	head
+	body
+		h1.cover-heading= errorCode
+		h3.cover-h3= errorMsg
+
+		if (err.length > 0)
+			.errorBox
+				p= err
+				p= err2
+		.catPic
+			img(src='img/err/flyingCat.gif' alt='ERROR' height='256' width='464')

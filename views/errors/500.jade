@@ -1,0 +1,16 @@
+doctype html
+html(lang='en')
+	head
+	body
+		h1.cover-heading= errorCode
+		h3.cover-h3= errorMsg
+		
+		if (err.length > 0)
+			.errorBox
+				p= err
+				p= err2
+		.catPic
+			img(src='img/err/adminCat.jpg' alt='ERROR' height='300' width='400')
+		
+		.errorMsg
+			| An error has occurred, please try your action again.

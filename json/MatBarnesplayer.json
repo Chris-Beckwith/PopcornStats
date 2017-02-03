@@ -1,0 +1,248 @@
+{
+	"fantasy_content": {
+		"xml:lang": "en-US",
+		"yahoo:uri": "/fantasy/v2/player/364.p.3643/stats",
+		"player": [
+			[
+				{
+					"player_key": "364.p.3643"
+				},
+				{
+					"player_id": "3643"
+				},
+				{
+					"name": {
+						"full": "Matt Barnes",
+						"first": "Matt",
+						"last": "Barnes",
+						"ascii_first": "Matt",
+						"ascii_last": "Barnes"
+					}
+				},
+				{
+					"editorial_player_key": "nba.p.3643"
+				},
+				{
+					"editorial_team_key": "nba.t.23"
+				},
+				{
+					"editorial_team_full_name": "Sacramento Kings"
+				},
+				{
+					"editorial_team_abbr": "Sac"
+				},
+				{
+					"uniform_number": "22"
+				},
+				{
+					"display_position": "SG,SF"
+				},
+				{
+					"headshot": {
+						"url": "https://s.yimg.com/iu/api/res/1.2/G0lYvbg3oDafTyuH7yhY_Q--/YXBwaWQ9c2hhcmVkO2NoPTIzMzY7Y3I9MTtjdz0xNzkwO2R4PTg1NztkeT0wO2ZpPXVsY3JvcDtoPTYwO3E9MTAwO3c9NDY-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/20161116/3643.png",
+						"size": "small"
+					},
+					"image_url": "https://s.yimg.com/iu/api/res/1.2/G0lYvbg3oDafTyuH7yhY_Q--/YXBwaWQ9c2hhcmVkO2NoPTIzMzY7Y3I9MTtjdz0xNzkwO2R4PTg1NztkeT0wO2ZpPXVsY3JvcDtoPTYwO3E9MTAwO3c9NDY-/https://s.yimg.com/xe/i/us/sp/v/nba_cutout/players_l/20161116/3643.png"
+				},
+				{
+					"is_undroppable": "0"
+				},
+				{
+					"position_type": "P"
+				},
+				{
+					"eligible_positions": [
+						{
+							"position": "GF"
+						}
+					]
+				},
+				{
+					"has_player_notes": 1
+				},
+				[]
+			],
+			{
+				"player_stats": {
+					"0": {
+						"coverage_type": "season",
+						"season": "2016"
+					},
+					"stats": [
+						{
+							"stat": {
+								"stat_id": "0",  "Games Played"
+								"value": "37"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "1", "???" 
+								"value": "-"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "2",  "Minutes Played"
+								"value": "926"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "3",  "Field Goal Attempts"
+								"value": "252"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "4", "Field Goal Makes"
+								"value": "96"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "5",  "Field Goal Percentage"
+								"value": ".381"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "6",  "Free Thrown Attempts"
+								"value": "47"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "7", "Free Throws Made"
+								"value": "32"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "8", "Free Throw Percentage"
+								"value": ".681"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "9", "Three Point Attempts"
+								"value": "140"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "10",  "Three Point Makes"
+								"value": "45"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "11", "Three Point Percentage"
+								"value": ".321"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "12",  "Total Points"
+								"value": "269"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "13",   "Offensive Rebounds"
+								"value": "36"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "14", "Defensive Rebounds"
+								"value": "142"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "15", "Total Rebounds"
+								"value": "178"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "16", "Assists"
+								"value": "101"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "17", "Steals"
+								"value": "25"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "18", "Blocks"
+								"value": "12"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "19", "Turnovers"
+								"value": "58"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "20",  "Assist:Turnover Ratio"
+								"value": "1.741"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "21", "Personal Fouls"
+								"value": "93"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "22",
+								"value": "0"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "23",
+								"value": "4"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "24",
+								"value": "0"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "25",
+								"value": "2"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "27",
+								"value": "1"
+							}
+						},
+						{
+							"stat": {
+								"stat_id": "28",
+								"value": "0"
+							}
+						}
+					]
+				}
+			}
+		],
+		"time": "47.906875610352ms",
+		"copyright": "Data provided by Yahoo! and STATS, LLC",
+		"refresh_rate": "60"
+	}
+}
