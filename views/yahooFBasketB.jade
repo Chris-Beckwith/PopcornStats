@@ -1,12 +1,8 @@
 doctype html
 html(lang='en')
 	head
-		meta(name="viewport" content="width=device-width, initial-scale=1")
-		link(href='css/bootstrap.min.css', rel='stylesheet')
-		link(href='css/bootstrap-social.css', rel='stylesheet')
-		link(href='css/font-awesome.css', rel='stylesheet')
-		link(href='css/freelancer.min.css', rel='stylesheet')
-		link(href='css/shared.css', rel='stylesheet')
+		include shared/head
+		meta(name='description', content='Yahoo Fantasy Basketball Team Compare, PopCornStats')
 		link(href='css/yahooFBasketB.css', rel='stylesheet')
 		- var matchupUrl = "https://basketball.fantasysports.yahoo.com/nba/12752/matchup?week=";
 		- var mid1 = "&mid1="
