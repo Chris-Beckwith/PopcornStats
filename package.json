@@ -6,6 +6,7 @@
 		"name": "Chris Beckwith",
 		"email": "foilforest@gmail.com"
 	},
+	"engines": { "node": ">=6.0.0" },
 	"keywords": [
 		"FoilForest",
 		"Foil Forest",

@@ -129,8 +129,13 @@ function getSchedule(user, res, callback) {
 					var matchups = [];
 					var results = [];
 					var mtchps = body.fantasy_content.team[1].matchups;
-					var mtchCount = body.fantasy_content.team[1].matchups.count;
-
+					var mtchCount = 0;
+//					console.log("TEST HERE!!!! " + mtchps);
+					
+					if (mtchps !== 'undefined') {
+						var mtchCount = mtchps.count;
+					}
+					
 					for (var n = 0; n < user.leagues.length; n++)
 						if (teamKey.includes(user.leagues[n].key))
 							leagueIndex = n;
