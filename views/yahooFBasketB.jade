@@ -4,7 +4,8 @@ html(lang='en')
 		include shared/head
 		meta(name='description', content='Yahoo Fantasy Basketball Team Compare, PopCornStats')
 		link(href='css/yahooFBasketB.css', rel='stylesheet')
-		- var matchupUrl = "https://basketball.fantasysports.yahoo.com/nba/12752/matchup?week=";
+		- var matchupUrl = "https://basketball.fantasysports.yahoo.com/nba/"
+        - var matchupUrl2 = "/matchup?week=";
 		- var mid1 = "&mid1="
 		- var mid2 = "&mid2="
 	
@@ -67,7 +68,7 @@ html(lang='en')
 													- for (var i = 1; i <= league.numTeams; i++) {
 														- if (team.id != i) {
 															.matchup
-																a.matchupUrl(href= "#{matchupUrl}" + "#{league.currentWeek}" + "#{mid1}" + "#{team.id}" + "#{mid2}" + "#{i}" alt='matchup' target="_blank") Compare vs. #{league.teamNames[i]}
+																a.matchupUrl(href= "#{matchupUrl}" + "#{league.id}" + "#{matchupUrl2}" + "#{league.currentWeek}" + "#{mid1}" + "#{team.id}" + "#{mid2}" + "#{i}" alt='matchup' target="_blank") Compare vs. #{league.teamNames[i]}
 														- }
 													- }
 
@@ -77,10 +78,10 @@ html(lang='en')
 													each matchup in league.matchups
 														- if (++index == league.currentWeek) {
 															.matchupCurrentWeek
-																a.matchupUrl(href= "#{matchupUrl}" + "#{index}" + "#{mid1}" + "#{team.id}" + "#{mid2}" + "#{matchup.teamId}" alt='matchup' target="_blank") Current Week #{index} Matchup
+																a.matchupUrl(href= "#{matchupUrl}" + "#{league.id}" + "#{matchupUrl2}" + "#{index}" + "#{mid1}" + "#{team.id}" + "#{mid2}" + "#{matchup.teamId}" alt='matchup' target="_blank") Current Week #{index} Matchup
 														- } else {
 															.matchup
-																a.matchupUrl(href= "#{matchupUrl}" + "#{index}" + "#{mid1}" + "#{team.id}" + "#{mid2}" + "#{matchup.teamId}" alt='matchup' target="_blank") Week #{index} Matchup
+																a.matchupUrl(href= "#{matchupUrl}" + "#{league.id}" + "#{matchupUrl2}" + "#{index}" + "#{mid1}" + "#{team.id}" + "#{mid2}" + "#{matchup.teamId}" alt='matchup' target="_blank") Week #{index} Matchup
 														- }
 
 												.showWeekly
@@ -97,7 +98,7 @@ html(lang='en')
 															- for (var n = 1; n <= league.numTeams; n++) {
 																- if (n != team.id) {
 																	.matchup
-																		a.matchupUrl(href= "#{matchupUrl}" + "#{i}" + "#{mid1}" + "#{team.id}" + "#{mid2}" + "#{n}" alt='matchup' target="_blank") Compare vs. #{league.teamNames[n]}
+																		a.matchupUrl(href= "#{matchupUrl}" + "#{league.id}" + "#{matchupUrl2}" + "#{i}" + "#{mid1}" + "#{team.id}" + "#{mid2}" + "#{n}" alt='matchup' target="_blank") Compare vs. #{league.teamNames[n]}
 																- }
 															- }
 													- }
