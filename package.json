@@ -6,14 +6,16 @@
 		"name": "Chris Beckwith",
 		"email": "foilforest@gmail.com"
 	},
-	"engines": { "node": ">=6.0.0" },
+	"engines": {
+		"node": ">=6.0.0"
+	},
 	"keywords": [
 		"FoilForest",
 		"Foil Forest",
-        "Yahoo Fantasy Basketball",
-        "Fantasy Basketball",
-        "Fantasy Ball",
-        "Fantasy BB"
+		"Yahoo Fantasy Basketball",
+		"Fantasy Basketball",
+		"Fantasy Ball",
+		"Fantasy BB"
 	],
 	"dependencies": {
 		"body-parser": "1.15.1",
@@ -26,7 +28,7 @@
 		"nodemailer": "3.0.0",
 		"passport": "0.2.0",
 		"passport-local": "1.0.0",
-        "passport-yahoo-oauth": "0.1.2",
+		"passport-yahoo-oauth": "0.1.2",
 		"request": "2.51.0",
 		"serve-favicon": "2.0.1",
 		"socket.io": "1.0.6",
