@@ -43,7 +43,7 @@ app.use('/img', express.static(__dirname + '/img'));
 app.use('/js', express.static(__dirname + '/js'));
 app.use('/lib', express.static(__dirname + '/lib'));
 app.use('/fonts', express.static(__dirname + '/fonts'));
-app.use(favicon(__dirname + '/img/icon/favicon.ico'));
+app.use(favicon(__dirname + '/img/icon/popicon.ico'));
 app.use(flash());
 
 //Setup parsers
