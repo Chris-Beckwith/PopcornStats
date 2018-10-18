@@ -8,7 +8,7 @@ nav.navbar.navbar-default.banner
 		.collapse.navbar-collapse#bs-example-navbar-collapse-1
 			ul.nav.navbar-nav.navbar-right.padRight#bannerDiv
 				- if (typeof(user) === 'undefined') {
-					 #[a.login.btn.btn-block.btn-social-icon.btn-yahoo(href="/auth/yahoo") #[span.fa.fa-yahoo#yahooOverride] #[.adjust Sign In With Yahoo!]]
+					   #[a.login.btn.btn-block.btn-social-icon.btn-yahoo(href="/auth/yahoo") #[span.fa.fa-yahoo#yahooOverride] #[.adjust Sign In With Yahoo!]]
 				- } else {
 					//- #[a.logout.btn.btn-block.btn-social-icon.btn-yahoo(href="/logout") #[span.fa.fa-yahoo#yahooOverride] #[.adjust Sign Out Of Yahoo!]]
 					a.logout.btn.btn-warning(href="/logout") Sign Out
@@ -21,7 +21,7 @@ nav.navbar.navbar-default.banner
 			span.icon-bar
 		ul.dropdown-menu#navbar-dropdown(aria-labelledby="dropdownMenu")
 			- if (typeof(user) === 'undefined') {
-				 #[a.login.btn.btn-block.btn-social-icon.btn-yahoo(href="/auth/yahoo") #[span.fa.fa-yahoo#yahooOverride] #[.adjust Sign In With Yahoo!]]
+				    #[a.login.btn.btn-block.btn-social-icon.btn-yahoo(href="/auth/yahoo") #[span.fa.fa-yahoo#yahooOverride] #[.adjust Sign In With Yahoo!]]
 			- } else {
 				//- #[a.logout.btn.btn-block.btn-social-icon.btn-yahoo(href="/logout") #[span.fa.fa-yahoo#yahooOverride] #[.adjust Sign Out Of Yahoo!]]
 				a.logout.dropdown-logout.btn.btn-warning(href="/logout") Sign Out
