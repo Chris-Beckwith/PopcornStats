@@ -2,27 +2,27 @@ link(href='css/banner.css', rel='stylesheet')
 
 
 nav.navbar.navbar-default.banner
-	a.navbar-brand#brand(href="#") Popcorn Stats
-	
-	.dropdown.pull-right#dropdown
-		.collapse.navbar-collapse#bs-example-navbar-collapse-1
-			ul.nav.navbar-nav.navbar-right.padRight#bannerDiv
-				- if (typeof(user) === 'undefined') {
-					   #[a.login.btn.btn-block.btn-social-icon.btn-yahoo(href="/auth/yahoo") #[span.fa.fa-yahoo#yahooOverride] #[.adjust Sign In With Yahoo!]]
-				- } else {
-					//- #[a.logout.btn.btn-block.btn-social-icon.btn-yahoo(href="/logout") #[span.fa.fa-yahoo#yahooOverride] #[.adjust Sign Out Of Yahoo!]]
-					a.logout.btn.btn-warning(href="/logout") Sign Out
-				- }
-	
-		button.btn.btn-default.navbar-toggle.dropdown-toggle(type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true")
-			span.sr-only Toggle navigation
-			span.icon-bar
-			span.icon-bar
-			span.icon-bar
-		ul.dropdown-menu#navbar-dropdown(aria-labelledby="dropdownMenu")
-			- if (typeof(user) === 'undefined') {
-					#[a.login.btn.btn-block.btn-social-icon.btn-yahoo(href="/auth/yahoo") #[span.fa.fa-yahoo#yahooOverride] #[.adjust Sign In With Yahoo!]]
-			- } else {
-				//- #[a.logout.btn.btn-block.btn-social-icon.btn-yahoo(href="/logout") #[span.fa.fa-yahoo#yahooOverride] #[.adjust Sign Out Of Yahoo!]]
-				a.logout.dropdown-logout.btn.btn-warning(href="/logout") Sign Out
-			- }
+    a.navbar-brand#brand(href="#") Popcorn Stats
+    
+    .dropdown.pull-right#dropdown
+        .collapse.navbar-collapse#bs-example-navbar-collapse-1
+            ul.nav.navbar-nav.navbar-right.padRight#bannerDiv
+                - if (typeof(user) === 'undefined') {
+                       #[a.login.btn.btn-block.btn-social-icon.btn-yahoo(href="/auth/yahoo") #[span.fa.fa-yahoo#yahooOverride] #[.adjust Sign In With Yahoo!]]
+                - } else {
+                    //- #[a.logout.btn.btn-block.btn-social-icon.btn-yahoo(href="/logout") #[span.fa.fa-yahoo#yahooOverride] #[.adjust Sign Out Of Yahoo!]]
+                    a.logout.btn.btn-warning(href="/logout") Sign Out
+                - }
+    
+        button.btn.btn-default.navbar-toggle.dropdown-toggle(type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true")
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        ul.dropdown-menu#navbar-dropdown(aria-labelledby="dropdownMenu")
+            - if (typeof(user) === 'undefined') {
+                    #[a.login.btn.btn-block.btn-social-icon.btn-yahoo(href="/auth/yahoo") #[span.fa.fa-yahoo#yahooOverride] #[.adjust Sign In With Yahoo!]]
+            - } else {
+                //- #[a.logout.btn.btn-block.btn-social-icon.btn-yahoo(href="/logout") #[span.fa.fa-yahoo#yahooOverride] #[.adjust Sign Out Of Yahoo!]]
+                a.logout.dropdown-logout.btn.btn-warning(href="/logout") Sign Out
+            - }
