@@ -43,7 +43,8 @@ app.use('/img', express.static(__dirname + '/img'));
 app.use('/js', express.static(__dirname + '/js'));
 app.use('/lib', express.static(__dirname + '/lib'));
 app.use('/fonts', express.static(__dirname + '/fonts'));
-app.use(favicon(__dirname + '/img/icon/popicon.ico'));
+app.use('/src', express.static(__dirname + '/src'));
+app.use(favicon(__dirname + '/img/icon/popicon.ico', { mageAge: 1000*60*60*24*7}));
 app.use(flash());
 
 //Setup parsers
