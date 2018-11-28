@@ -9,3 +9,8 @@ package-lock.json
 img/popcorn.png
 
 img/popcorn.xcf
+
+.env
+
+cert.pem
+key.pem

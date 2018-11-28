@@ -4,8 +4,8 @@
  */
  
  //Include Classes
-var router = require('./router');
-var logger = require('./logger');
+var router = require('./src/router');
+var logger = require('./src/logger');
 
 //Include Modules
 var express = require('express');
